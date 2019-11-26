@@ -16,6 +16,9 @@
     <Filter Include="源文件\base">
       <UniqueIdentifier>{6ebc5600-c434-40c9-ad17-618d08b84833}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\class">
+      <UniqueIdentifier>{b888c246-6a22-4f54-8d8d-d697f8bfe260}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
@@ -32,6 +35,15 @@
     </ClCompile>
     <ClCompile Include="storage.cpp">
       <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="caculator.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="function.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="class.cpp">
+      <Filter>源文件\class</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
