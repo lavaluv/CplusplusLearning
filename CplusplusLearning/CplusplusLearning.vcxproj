@@ -123,12 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="array.cpp" />
     <ClCompile Include="caculator.cpp" />
     <ClCompile Include="class.cpp" />
     <ClCompile Include="const.cpp" />
     <ClCompile Include="dataFormat.cpp" />
     <ClCompile Include="function.cpp" />
     <ClCompile Include="storage.cpp" />
+    <ClCompile Include="strings.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="variable.cpp" />
   </ItemGroup>

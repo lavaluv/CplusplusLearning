@@ -10,6 +10,8 @@ extern void storage();
 extern void caculator();
 extern void function();
 extern void myClass();
+extern void myArray();
+extern void strings();
 int main() {
-	myClass();
+	strings();
 }
