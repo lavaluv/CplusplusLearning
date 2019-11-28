@@ -87,6 +87,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,10 +129,16 @@
     <ClCompile Include="class.cpp" />
     <ClCompile Include="const.cpp" />
     <ClCompile Include="dataFormat.cpp" />
+    <ClCompile Include="extend.cpp" />
     <ClCompile Include="function.cpp" />
+    <ClCompile Include="io.cpp" />
+    <ClCompile Include="pointer.cpp" />
+    <ClCompile Include="reference.cpp" />
     <ClCompile Include="storage.cpp" />
     <ClCompile Include="strings.cpp" />
+    <ClCompile Include="struct.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="time.cpp" />
     <ClCompile Include="variable.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -51,5 +51,23 @@
     <ClCompile Include="strings.cpp">
       <Filter>源文件\base</Filter>
     </ClCompile>
+    <ClCompile Include="pointer.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="reference.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="io.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="struct.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.cpp">
+      <Filter>源文件\class</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
