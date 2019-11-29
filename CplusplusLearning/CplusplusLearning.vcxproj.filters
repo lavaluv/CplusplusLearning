@@ -69,5 +69,8 @@
     <ClCompile Include="extend.cpp">
       <Filter>源文件\class</Filter>
     </ClCompile>
+    <ClCompile Include="polymorphic.cpp">
+      <Filter>源文件\class</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

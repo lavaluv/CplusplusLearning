@@ -10,6 +10,23 @@ using namespace std;
 	重载声明是指一个与之前已经在该作用域内声明过的函数或方法具有相同名称的声明，但是它们的参数列表和定义（实现）不相同。
 	当调用一个重载函数或重载运算符时，编译器通过把所使用的参数类型与定义中的参数类型进行比较，决定选用最合适的定义。
 	选择最合适的重载函数或重载运算符的过程，称为重载决策。
+
+	运算符重载：
+	重载的运算符是带有特殊名称的函数，函数名是由关键字 operator 和其后要重载的运算符符号构成的。
+	与其他函数一样，重载运算符有一个返回类型和一个参数列表。
+	一元运算符重载：-(取负),--,++,!
+	二元运算符重载：-(减号),+,*,/,%
+	逻辑运算符重载：>,<,==,>=,<=
+	输入输出运算符重载:>>,<<(应用友元函数重载，而不是成员函数)
+	赋值运算符重载：=
+
+	下面是不可重载的运算符列表：
+	. 成员访问运算符
+	.*, ->* 成员指针访问运算符
+	:: 域运算符
+	sizeof 长度运算符
+	?: 条件运算符
+	# 预处理符号
 */
 class Father
 {
@@ -27,6 +44,7 @@ public:
 		x = in;
 		publicValue = in;
 	}
+	Father operator+(const Father&);
 private:
 	int x;
 };
@@ -39,6 +57,10 @@ Father::Father()
 Father::~Father()
 {
 	cout << "father destructor" << endl;
+}
+Father Father::operator+(const Father& f)
+{
+	return Father(publicValue+f.publicValue);
 }
 class Son : public Father
 {
@@ -72,4 +94,7 @@ void extend() {
 	Father father(1);
 	Son son = father;
 	cout << son.publicValue << endl;
+	Father other(2);
+	father = father + other;
+	cout << father.publicValue << endl;
 }

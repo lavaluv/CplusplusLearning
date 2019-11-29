@@ -133,6 +133,7 @@
     <ClCompile Include="function.cpp" />
     <ClCompile Include="io.cpp" />
     <ClCompile Include="pointer.cpp" />
+    <ClCompile Include="polymorphic.cpp" />
     <ClCompile Include="reference.cpp" />
     <ClCompile Include="storage.cpp" />
     <ClCompile Include="strings.cpp" />
